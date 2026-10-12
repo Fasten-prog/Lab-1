@@ -36,17 +36,12 @@ for line in range(HIGHT):
 print('-'*70)
 time.sleep(0.5)
 print("Анимация")
-frames = [
-    "●         ",
-    "   ●      ",
-    "      ●   ",
-    "         ●"
-]
-
-for frame in frames:
-    clear()
-    print(frame)
-    time.sleep(0.5)
+def animation():
+    for i in range(4):
+        clear()
+        print(" " * (i * 3) + "O")
+        time.sleep(0.5)
+animation()
 
 print("Диаграмма")
 
