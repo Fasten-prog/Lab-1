@@ -8,7 +8,7 @@ WHITE = '\u001b[47m'
 RED = '\u001b[41m'
 ERASE = '\u001b[0m'
 DARK = "\u001b[40m"  
-ED = f'{WHITE} {ERASE}' 
+
 width = 15
 height = 3
 
@@ -70,30 +70,3 @@ time.sleep(0.5)
 
 
 
-WIDTH = 40
-HEIGHT = 12
-X_MAX = 16
-Y_MAX = math.sqrt(X_MAX)
-
-graph = [[" " for _ in range(WIDTH)] for _ in range(HEIGHT)]
-
-y_axis = 2
-x_axis = HEIGHT - 2
-for r in range(HEIGHT):
-    graph[r][y_axis] = "|"
-for c in range(y_axis, WIDTH):
-    graph[x_axis][c] = "-"
-
-
-for i in range(WIDTH - y_axis - 1):
-    x = (i / (WIDTH - y_axis - 2)) * X_MAX
-    y = math.sqrt(x)
-    row = int(round((1 - y / Y_MAX) * (x_axis - 1)))
-    col = y_axis + 1 + i
-    if 0 <= row < HEIGHT:
-        graph[row][col] = ED
-
-for row in graph:
-    print("".join(row))
-
-print('-'*70)
