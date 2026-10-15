@@ -19,7 +19,7 @@ for stripe in range(height):
     print(RED + " " * width + ERASE)
 
 
-time.sleep(1)
+time.sleep(3)
 
 print("Повторяющийся узор")
 
@@ -34,13 +34,15 @@ for line in range(HIGHT):
         print((f'   {WHITE} {ERASE}      ')*(LENGHT//10))
 
 print('-'*70)
-time.sleep(1)
+time.sleep(3)
+
+
 print("Анимация")
 def animation():
     for i in range(4):
         clear()
         print(" " * (i * 3) + "O")
-        time.sleep(0.5)
+        time.sleep(1)
 animation()
 
 print("Диаграмма")
