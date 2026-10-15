@@ -1,13 +1,12 @@
 import os
 import time
-import math
 
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
 WHITE = '\u001b[47m'
 RED = '\u001b[41m'
 ERASE = '\u001b[0m'
-DARK = "\u001b[40m"  
+
 
 width = 15
 height = 3
