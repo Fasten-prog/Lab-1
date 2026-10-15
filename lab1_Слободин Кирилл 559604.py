@@ -34,7 +34,7 @@ for line in range(HIGHT):
         print((f'   {WHITE} {ERASE}      ')*(LENGHT//10))
 
 print('-'*70)
-time.sleep(0.5)
+time.sleep(1)
 print("Анимация")
 def animation():
     for i in range(4):
